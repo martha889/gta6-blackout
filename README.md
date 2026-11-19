@@ -90,3 +90,7 @@ npm run store-assets   # regenerates the screenshots and promo tile in store/
 - Images with no text (key art in an ad, a meme with no caption) can't be detected.
 - Content inside *closed* shadow roots isn't reachable, and no extension can run on `chrome://` pages or the Chrome Web Store.
 - Chrome's own address-bar suggestions can't be filtered by an extension.
+
+## License
+
+[MIT](LICENSE). GTA 6 Blackout is an independent project, not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive Software, Inc.

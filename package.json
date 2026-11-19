@@ -3,6 +3,7 @@
   "version": "1.1.1",
   "private": true,
   "description": "Chrome extension that hides GTA 6 content across the web.",
+  "license": "MIT",
   "scripts": {
     "test": "node tests/patterns.test.js",
     "test:e2e": "node tests/e2e.test.js",
