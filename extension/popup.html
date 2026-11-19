@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GTA 6 Blackout</title>
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      margin: 0;
+      width: 300px;
+      padding: 18px;
+      background: #0f1115;
+      color: #eef0f4;
+      font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+    header img { width: 32px; height: 32px; }
+    h1 { margin: 0; font-size: 16px; }
+    h2 { margin: 0 0 4px; font-size: 13px; }
+    .status { margin: 0; color: #4ade80; font-size: 12px; font-weight: 600; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+    .grid > div { border: 1px solid #262b36; border-radius: 10px; padding: 10px; }
+    .label { color: #9aa3b2; font-size: 11px; }
+    .num { font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .strict { border: 1px solid #262b36; border-radius: 10px; padding: 12px; margin-bottom: 14px; }
+    .strict p { margin: 0 0 10px; color: #9aa3b2; font-size: 12px; }
+    .strict .on { color: #f87171; font-weight: 600; }
+    .row { display: flex; gap: 8px; }
+    button {
+      font: inherit; font-size: 13px; padding: 7px 12px; border-radius: 999px; cursor: pointer;
+      border: 1px solid #262b36; background: transparent; color: #eef0f4;
+    }
+    button.primary { background: #d7263d; border-color: #d7263d; color: #fff; font-weight: 600; }
+    button:hover { filter: brightness(1.15); }
+    [hidden] { display: none !important; }
+    p.note { margin: 0; color: #9aa3b2; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="icons/icon48.png" alt="">
+    <div>
+      <h1>GTA 6 Blackout</h1>
+      <p class="status">● Active on every site</p>
+    </div>
+  </header>
+  <div class="grid">
+    <div><div class="label">On this tab</div><div class="num" id="tab">0</div></div>
+    <div><div class="label">Days strong</div><div class="num" id="days">0</div></div>
+    <div><div class="label">Items hidden</div><div class="num" id="hidden">0</div></div>
+    <div><div class="label">Pages blocked</div><div class="num" id="pages">0</div></div>
+  </div>
+
+  <section class="strict">
+    <h2>Strict mode <span class="on" id="strict-badge" hidden>· On</span></h2>
+    <p id="strict-text">Also blocks the whole GTA series, GTA Online and Rockstar Games. Turning it on is instant. Turning it off takes an hour.</p>
+    <div class="row">
+      <button class="primary" id="strict-on" hidden>Turn on</button>
+      <button id="strict-off" hidden>Turn off in 1 hour</button>
+      <button class="primary" id="strict-cancel" hidden>Keep it on</button>
+    </div>
+  </section>
+
+  <p class="note">There's no off switch for the extension itself, on purpose. To turn it off, you have to go to chrome://extensions and do it yourself.</p>
+  <script src="popup.js"></script>
+</body>
+</html>

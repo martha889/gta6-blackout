@@ -1,0 +1,92 @@
+[
+  {
+    "id": 100,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?src=strict"
+      }
+    },
+    "condition": {
+      "requestDomains": [
+        "rockstargames.com",
+        "gtaforums.com",
+        "gtabase.com",
+        "gta.fandom.com"
+      ],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 101,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?src=strict"
+      }
+    },
+    "condition": {
+      "regexFilter": "(^|[^a-z0-9]|%[0-9a-f]{2})gta([ivx]+|[0-9]+|online|o)?([^a-z0-9]|$)",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 102,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?src=strict"
+      }
+    },
+    "condition": {
+      "regexFilter": "grand(%20|[-_.+])*theft(%20|[-_.+])*auto",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 103,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?src=strict"
+      }
+    },
+    "condition": {
+      "regexFilter": "rockstar(%20|[-_+])*games",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 104,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?src=strict"
+      }
+    },
+    "condition": {
+      "regexFilter": "(vice(%20|[-_+])+city|los(%20|[-_+])+santos)",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  }
+]

@@ -1,0 +1,189 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?src=url"
+      }
+    },
+    "condition": {
+      "regexFilter": "(^|[^a-z0-9]|%[0-9a-f]{2})(gta|grand(%20|[-_.+])*theft(%20|[-_.+])*auto)(%20|%23|%3a|[-_.+:])*(6([^0-9]|$)|(vi|six)([^a-z0-9]|$))",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?src=url"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://(www\\.)?rockstargames\\.com/([a-z]{2}(-[a-z]{2})?/)?vi([/?#]|$)",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?src=url"
+      }
+    },
+    "condition": {
+      "regexFilter": "lucia(%20|[-_+])+caminos",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?src=url"
+      }
+    },
+    "condition": {
+      "regexFilter": "jason(%20|[-_+])+duval",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?src=url"
+      }
+    },
+    "condition": {
+      "regexFilter": "jason(%20|[-_+])*(%26|and)(%20|[-_+])*lucia",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?src=url"
+      }
+    },
+    "condition": {
+      "regexFilter": "(^|[^a-z])leonida([^a-z]|$)",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?src=url"
+      }
+    },
+    "condition": {
+      "regexFilter": "port(%20|[-_+])+gellhorn",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?src=url"
+      }
+    },
+    "condition": {
+      "regexFilter": "rockstar(%27s|s)?(%20|[-_+])+(new|next|upcoming|latest)(%20|[-_+])+(game|title|gta)",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?src=url"
+      }
+    },
+    "condition": {
+      "regexFilter": "(new|next|upcoming|latest)(%20|[-_+])+rockstar(%20|[-_+])+game",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?src=url"
+      }
+    },
+    "condition": {
+      "regexFilter": "(^|[^a-z0-9]|%[0-9a-f]{2})gta(%20|[-_+])+(trailer|release(%20|[-_+])+date|pre-?orders?|countdown|leaks?)([^a-z]|$)",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?src=url"
+      }
+    },
+    "condition": {
+      "regexFilter": "(new|next|upcoming)(%20|[-_+])+gta((%20|[-_+])+(game|trailer|release|price|pre-?order|leaks?|map|news)([^a-z]|$)|[&#/]|$)",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  }
+]

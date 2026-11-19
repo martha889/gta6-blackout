@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GTA 6 Blackout</title>
+  <meta name="description" content="A Chrome extension that hides GTA 6 videos, posts, searches and news across the web, so the hype doesn't talk you into buying it.">
+  <link rel="icon" href="icon.png">
+  <style>
+    :root { --bg: #0f1115; --card: #171a21; --text: #eef0f4; --muted: #9aa3b2; --line: #262b36; --accent: #d7263d; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text);
+           font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    main { max-width: 900px; margin: 0 auto; padding: 56px 16px 64px; }
+    header { display: flex; align-items: center; gap: 18px; margin-bottom: 20px; }
+    header img { width: 72px; height: 72px; }
+    h1 { margin: 0; font-size: 38px; line-height: 1.1; letter-spacing: -0.02em; }
+    .lede { margin: 4px 0 0; color: var(--muted); font-size: 19px; }
+    .shot { display: block; width: 100%; height: auto; margin: 28px 0 36px; border-radius: 14px; border: 1px solid var(--line); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; }
+    .grid div { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+    .grid h2 { margin: 0 0 6px; font-size: 17px; }
+    .grid p { margin: 0; color: var(--muted); font-size: 15px; }
+    a { color: #f87171; }
+    footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    footer a { margin-right: 16px; }
+    @media (max-width: 520px) { h1 { font-size: 30px; } header img { width: 56px; height: 56px; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <div>
+      <h1>GTA 6 Blackout</h1>
+      <p class="lede">Hide the hype. Keep your money.</p>
+    </div>
+  </header>
+
+  <p>A Chrome extension that hides GTA 6 videos, posts, searches and news across the web, so the hype doesn't talk you into buying it.</p>
+
+  <img class="shot" src="screenshot.png" width="1280" height="800" alt="A video feed before and after: the GTA 6 videos are gone with the extension on.">
+
+  <div class="grid">
+    <div><h2>Blocks pages before they load</h2><p>GTA 6 searches, articles, store pages and subreddits go to a calm block screen instead.</p></div>
+    <div><h2>Hides it everywhere else</h2><p>YouTube, Reddit, X, search results, TikTok and shops: GTA 6 items disappear as the page loads.</p></div>
+    <div><h2>Catches indirect references</h2><p>"Rockstar's next game", Jason and Lucia, Leonida, "GTA trailer" and the name in other languages.</p></div>
+    <div><h2>Built to resist the impulse</h2><p>No off switch in the popup. Strict mode blocks all of GTA and Rockstar, and takes an hour to turn off.</p></div>
+    <div><h2>Private by design</h2><p>Everything happens in your browser. No account, no analytics, no data collected.</p></div>
+  </div>
+
+  <footer>
+    <a href="privacy-policy.html">Privacy policy</a>
+    <a href="https://github.com/martha889/gta6-blackout">Source code</a>
+    <a href="https://github.com/martha889/gta6-blackout/issues">Report a problem</a>
+    <p>An independent project, not affiliated with Rockstar Games or Take-Two Interactive.</p>
+  </footer>
+</main>
+</body>
+</html>
